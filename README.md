@@ -3,14 +3,7 @@ Library gif emoji like skype, messenger, wechat, whatapp, snapchat, facebook, za
 
 # Demo
 
-[<img src="/store/GIF.gif">](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date)
-
-# Project
-
-Icon | Name | Link Google Play
------------- | ------------ | -------------
-[<img src="/store/ic_launcher.png">](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date) | [Sola - Stranger chat, Anonymous chat & Date](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date) | [<img src="/store/Store.png">](https://play.google.com/store/apps/details?id=com.hoanganhtuan01101995.sola_date)
-
+<img src="/store/GIF.gif">
 
 # Download
 
