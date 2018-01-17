@@ -1,0 +1,45 @@
+
+cropX = cropImageView.getCropX();
+        cropY = cropImageView.getCropY();
+        cropHeight = cropImageView.getCropHeight();
+        cropWidth = cropImageView.getCropWidth();
+
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int parentY = displayMetrics.heightPixels;
+        int parentX = displayMetrics.widthPixels;
+
+        float scale = Math.min(parentY / cropImageView.getCropHeight(), parentX / cropImageView.getCropWidth());
+
+        float centerCropY = reControllerHeader.getHeight() + cropImageView.getCropCenterY();
+        float centerCropX = cropImageView.getCropCenterX();
+
+
+        cropImageView
+                .animate()
+                .translationY((parentY / 2 - centerCropY) * scale)
+                .translationX((parentX / 2 - centerCropX) * scale)
+                .scaleX(scale)
+                .scaleY(scale)
+                .setDuration(300)
+                .setListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animator) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animator) {
+                        hideCrop();
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animator) {
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animator) {
+
+                    }
+                })
+                .start();
